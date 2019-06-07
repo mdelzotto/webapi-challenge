@@ -26,13 +26,26 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+Express is a minimalist framework. It doesn’t provide everything out of the box, but using middleware we can add extra functionality to our application. Middleware provide a way to extend the features provided by the Express framework.
+
+We can use Express Middleware to add features to Express. It is the biggest part of Express, most of the code we write, including route handlers, is middleware under the hood.
+
 - [ ] Describe Middleware?
 
+Middleware functions are functions that have access to the request object (req), the response object (res), and the next function in the application’s request-response cycle.
+
+
+
 - [ ] Describe a Resource?
+
+When designing a RESTful Web API, keep the following principles in mind:
+everything is a resource.
 
 - [ ] What can the API return to help clients know if a request was successful?
 
 - [ ] How can we partition our application into sub-applications?
+
+Even if you are a small team working in a small project, the benefits of being able to deploy parts of the web application separately might be enough to make it worth it. There’s only a small price to pay up front, and a few things you have to be aware while going forward. In the end, maintaining several small applications is always easier than maintaining a big one, and if those small applications work indistinguishably, then why not?
 
 ## Project Setup
 
